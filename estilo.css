@@ -1,0 +1,141 @@
+img {width:3cm;height:3cm;}
+table {width:80%;margin:auto;}
+th#price {cursor:pointer;}
+li {color:blue;}
+/*si chequea muestra los productos sin cheque desaparecen los productos*/
+input#c1:checked ~ table tbody tr.c1 { display: table-row; }
+input#c1:not(checked) ~ table tbody tr.c1 { display: none; }
+input#c2:checked ~ table tbody tr.c2 { display: table-row; }
+input#c2:not(checked) ~ table tbody tr.c2 { display: none; }
+input#c3:checked ~ table tbody tr.c3 { display: table-row; }
+input#c3:not(checked) ~ table tbody tr.c3 { display: none; }
+input#c4:checked ~ table tbody tr.c4 { display: table-row; }
+input#c4:not(checked) ~ table tbody tr.c4 { display: none; }
+
+/* estilo.css */
+
+/* Fondo elegante para el cuerpo */
+body {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilo de la tarjeta principal */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del título */
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón de "Obtener Productos" */
+.btn-primary {
+    background-color: #3498db;
+    border-color: #2980b9;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Estilo de la tabla */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.table thead th {
+    position: relative;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo de la lista */
+ol {
+    margin-left: 0;
+    padding-left: 1.2rem;
+}
+
+ol li {
+    color: #34495e;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Checkboxes personalizados */
+.form-check-input {
+    accent-color: #3498db;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: all 0.2s;
+}
+
+.form-check-label {
+    color: #34495e;
+    font-weight: 500;
+}
+
+/* Transiciones */
+input[type="checkbox"]:checked + label {
+    color: #2980b9;
+}
+
+/* Contenedor de formulario */
+#filtroprods {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+#filtroprods:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto de selección en la tabla */
+.table tbody tr:hover {
+    background-color: #e6f7ff;
+}
+
+/* Efectos de sombra y animaciones */
+.table th.sortable {
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.table th.sortable:hover {
+    color: #3498db;
+    transform: scale(1.1);
+}
+
